@@ -1,0 +1,68 @@
+\documentclass{jsarticle}
+
+ \usepackage{ascmac}
+ \usepackage[dvipdfmx]{graphicx}
+ \usepackage[dvipdfmx]{color}
+ \usepackage{amssymb,amsmath,amsthm}
+ \usepackage{graphics}
+ \usepackage{fancybox, tcolorbox}
+ \tcbuselibrary{raster,skins, breakable}
+ \usepackage{nccmath}
+ \usepackage{tikz}
+ \usetikzlibrary{intersections, calc, cd}
+ \usepackage{bm}
+ \usepackage[italicdiff]{physics}
+ \usepackage{titlesec}
+ \usepackage{mathtools}
+ \usepackage{enumerate}
+
+ \newcommand{\myproof}[1]{
+  \begin{tcolorbox}[
+    empty,top = -2pt, breakable = true,
+    underlay = {
+      \draw[line width = 5pt, color = teal] (frame.north west) -- (frame.south west);
+      },
+    underlay unbroken = {
+      \fill (frame.south east) -- ([xshift = -5pt]frame.south east) --([xshift = -5pt, yshift = -7pt]frame.south east) -- ([yshift = -7pt]frame.south east) -- cycle;
+    },
+    underlay last = {
+        \fill (frame.south east) -- ([xshift = -5pt]frame.south east) --([xshift = -5pt, yshift = -7pt]frame.south east) -- ([yshift = -7pt]frame.south east) -- cycle;
+      }
+    ]
+    {\it Proof.}
+
+    {#1}
+  \end{tcolorbox}
+ }
+
+ \numberwithin{equation}{section}
+ \setcounter{tocdepth}{3}
+
+\theoremstyle{definition}
+\newtheorem{dfn}{定義}[section]
+\newtheorem{exa}{例}[section]
+\newtheorem{thm}[dfn]{定理}
+\newtheorem{prop}[dfn]{命題}
+\newtheorem{note}[dfn]{注意}
+\newtheorem{prob}[dfn]{問}
+\newtheorem{coro}[dfn]{系}
+
+
+\title{教科書67pの17.54〜17.57の説明}
+\author{湯元颯真}
+\date{\today}
+
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+%     \lfoot{}
+%     \cfoot{\thepage}
+%     \rfoot{}
+
+\begin{document}
+今回の文章について，内容理解
+このpdfはネット上で見れるようにしています
+\maketitle
+% \tableofcontents
+% \clearpage
+
+\end{document}
