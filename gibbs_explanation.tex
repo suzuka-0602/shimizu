@@ -15,6 +15,7 @@
  \usepackage{titlesec}
  \usepackage{mathtools}
  \usepackage{enumerate}
+ \usepackage{wrapfig}
 
  \newcommand{\myproof}[1]{
   \begin{tcolorbox}[
@@ -67,6 +68,57 @@
 今回の文章について，内容理解しながら書いているため，間違えなどがあると思われます．
 そのときは何かしらでdmしていただくか，somaaruaru@gmail.comまで連絡してください
 このpdfはgithub上で見れるようにしています．元のコードもgithub上にあるため，気になる方は確認してみてください．
+
+
+
+\begin{figure}[h]
+   \centering
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-0.7,xscale=0.85]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Rectangle [id:dp7472215261731835] 
+\draw   (130.1,42.9) -- (427.35,42.9) -- (427.35,283.83) -- (130.1,283.83) -- cycle ;
+%Straight Lines [id:da2394938771272458] 
+\draw    (130.1,283.83) -- (130.1,44.9) ;
+\draw [shift={(130.1,42.9)}, rotate = 90] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da8069617214090359] 
+\draw    (130.1,283.83) -- (425.35,283.83) ;
+\draw [shift={(427.35,283.83)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Curve Lines [id:da9662565065194997] 
+\draw    (130.1,283.83) .. controls (184.47,249.48) and (174.32,261.97) .. (227.25,200.29) ;
+%Curve Lines [id:da8328073699059954] 
+\draw    (227.25,200.29) .. controls (304.1,189.36) and (304.82,189.36) .. (364.27,150.32) ;
+%Straight Lines [id:da1501075516279594] 
+\draw    (227.25,200.29) -- (250.45,43.36) ;
+%Straight Lines [id:da6473125650127264] 
+\draw    (204.05,192.48) -- (225.35,199.65) ;
+\draw [shift={(227.25,200.29)}, rotate = 198.6] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+
+% Text Node
+\draw (439.74,278.17) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{ptm}\selectfont T}};
+% Text Node
+\draw (125.1,20) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{ptm}\selectfont P}};
+% Text Node
+\draw (164.62,135.3) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{ptm}\selectfont 固体}};
+% Text Node
+\draw (284.25,116.56) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{ptm}\selectfont 液体}};
+% Text Node
+\draw (274.82,223.52) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{ptm}\selectfont 気体}};
+% Text Node
+\draw (171,177.5) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{ptm}\selectfont {\scriptsize 三重点}}};
+
+
+\end{tikzpicture}
+\caption{\(T\)と\(P\)での相図}
+\end{figure}
+\section{導入}
+まず，ルールとして，\(D(x,y)\)を用いてある引数xとyによってそのx,yによる変化の自由度を関数\(D\)と表記する
+．\\
+2つの相での平衡において，$D(T, P) = 1$となるのは図を見て実感できるだろう. $D(T, v) = D(u, v) = 2$と表せられる．
+(ここでは\(uとv\)はそれぞれ粒子数NでUとVを割ったものとする)
+
 
 
 \end{document}
